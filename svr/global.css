@@ -1,0 +1,408 @@
+/*
+.left-side {
+display:inline-block;
+vertical-align:top;
+margin-right:30px;
+padding-top:20px;
+width:15%;
+
+}
+.right-side {
+display:inline-block;
+vertical-align:top;
+padding-top:20px;
+width:40%;
+}
+.recommend-courses {
+display:inline-block;
+background-color:#777;
+width:40%;
+height:1000px;
+}
+ */
+	@media screen and (max-width:691px) {
+		.left-side {
+			display:none;
+
+		}
+		.right-side {
+			display:block;
+			vertical-align:top;
+			padding-top:12px;
+			padding-left:12px;
+			padding-right:12px;
+			margin-left:5px;
+			margin-right:5px;
+			background-color:#fff;
+			border:1px solid #eee;
+		}
+		.recommend-courses {
+			display:block;
+			vertical-align:top;
+			padding-top:10px;
+			background-color:#fff;
+			border:1px solid #eee;
+		}
+	}
+	@media screen and (max-width:991px) and (min-width:692px) {
+		.left-side {
+			display:none;
+
+		}
+		.right-side {
+			display:inline-block;
+			vertical-align:top;
+			padding-top:12px;
+			padding-left:12px;
+			padding-right:12px;
+			margin-left:5px;
+			margin-right:5px;
+			width:50%;
+			background-color:#fff;
+			border:1px solid #eee;
+		}
+		.recommend-courses {
+			display:inline-block;
+			vertical-align:top;
+			padding-top:20px;
+			padding-left:30px;
+			width:45%;
+			background-color:#fff;
+			border:1px solid #eee;
+		}
+
+
+	}
+	@media screen and (min-width:992px) {
+		.left-side {
+			display:inline-block;
+			background-color:#fff;
+			border:1px solid #eee;
+			vertical-align:top;
+			padding-right:12px;
+			padding-left:12px;
+			padding-top:20px;
+			width:15%;
+
+		}
+		.right-side {
+			display:inline-block;
+			background-color:#fff;
+			border:1px solid #eee;
+			vertical-align:top;
+			padding:20px 20px 20px 20px;
+			margin-left:5px;
+			margin-right:5px;
+			width:50%;
+		}
+		.recommend-courses {
+			display:inline-block;
+			vertical-align:top;
+			padding-top:20px;
+			padding-left:20px;
+			padding-right:20px;
+			width:33%;
+			border:#eee;
+			background-color:#fff;
+			border:1px solid #eee;
+
+
+		}
+	}
+	.teacher-name {
+		display: inline-block;
+		vertical-align:middle;
+		padding: 5px 10px 5px 10px;
+	}
+
+	.teacher-location {
+		padding:10px 0 0 0;
+	}
+	.summary {
+		margin-top:10px;
+		margin-bottom:10px;
+		font-size:18px;
+	}
+	.teacher-course-description {
+		display: block;
+		line-height: 2em;
+	}
+
+	.teacher-course-type {
+		line-height: 1.5em;
+	}
+	.teacher-comment {
+		line-height: 2em;
+	}
+
+
+
+	.teacher-rate {
+		display: inline-block;
+		margin-right:150px;
+	}
+	.star {
+		color: orange;
+	}
+	.action {
+		display: inline-block;
+	}
+	.action a {
+		text-decoration: none;
+	}
+	.teacher-labels li{
+		border-radius: 2px;
+		border-color:  #eaeaea;
+		border-width: 1px;
+		border-style: solid;
+		padding-left:5px;
+		padding-right:5px;
+		padding-top:2px;
+		padding-bottom:2px;
+		margin-left:2px;
+		margin-right:2px;
+		margin-top:5px;
+	}
+
+	.course-purchase-title {
+		margin-top:20px;
+		margin-bottom:10px;
+		font-size:20px;
+		font-weight: bold;
+	}
+	/*
+	.course-purchase-way ,
+	.course-purchase-purpose {
+	margin-right: 5px;
+	}*/
+
+	.course-purchase-intro {
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	.course-address {
+		margin-top:10px;
+		margin-bottom:5px;
+	}
+	.way-selections {
+		display: inline-block;
+		position: relative;
+		bottom:-10px;
+	}
+	.buy {
+		float:left;
+
+	}
+	.course-time,
+	.buy-hours
+	{
+		margin-top:10px;
+		margin-bottom: 10px;
+	}
+	#cost {
+		color:orange;
+	}
+	.calender-table {
+		margin-top:60px;
+		max-width: 600px;
+	}
+	.course-list .course-list-title {
+		font-size:18px;
+		font-weight:bold;
+		border-bottom:1px solid #cacaca;
+	}
+	.course-list .courses {
+		font-size:16px;
+		font-weight:bold;
+		margin-top:20px;
+	}
+	.course-list .more-info {
+		float:right;
+		cursor:pointer;
+	}
+	.free-time-search td{
+		cursor:pointer;
+	}
+	.table-fixed {
+		table-layout:fixed;
+	}
+	body {
+		background-color:#f7f7f7
+	}
+	.nav-header {
+		padding-top:10px;
+		margin-bottom:10px;
+		background-color:#fff;
+		border:1px solid #eee;
+	}
+
+
+	@media screen and (max-width:761px) {
+	.comment-area {
+		display:inline-block;
+		vertical-align:top;
+		background-color:#c7d6d8;
+		padding:10px 15px 10px 15px;
+		margin-bottom:20px;
+		margin-left:15px ;
+		margin-right:15px;
+		margin-bottom:20px;
+		box-shadow: 0px 4px 8px 0 rgba(7,17,27,.1),4px 0px 8px 0 rgba(7,17,27,.1),-4px 0px 8px 0 rgba(7,17,27,.1);
+	}
+	.comment-area:hover {
+
+		box-shadow: 0px 4px 24px 0 rgba(7,17,27,.1),4px 0px 24px 0 rgba(7,17,27,.1),-4px 0px 24px 0 rgba(7,17,27,.1);
+		transition: .3s all linear;
+	}
+
+	.comment-area::-webkit-scrollbar
+	{
+		width: 0px;
+		background-color: transparent;
+	}
+	.comment-user-info {
+		padding:12px 7px 10px 10px;
+	}
+	.comment-content {
+		padding:7px 10px 10px 7px;
+		font-family:-apple-system,"Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size:15px;
+	}
+	.comment-user-name {
+		padding: 0 0 5px 0px;
+		vertical-align:top;
+	}
+	.comment-time {
+		width:60px;
+		text-align:center;
+		font-size:10px;
+	}
+	.comment-teacher-name {
+		text-align:center;
+		margin-top:15px;
+	}
+	.comment-user {
+		display:inline-block;
+		vertical-align:top;
+	}
+	.comment-user-avatar {
+		margin-right:10px;
+		border-radius:50%;
+	}
+}
+	/*Comment Area*/
+	@media screen and (max-width:991px) and (min-width:762px) {
+	.comment-area {
+		display:inline-block;
+		vertical-align:top;
+		background-color:#c7d6d8;
+		padding:10px 15px 10px 15px;
+		margin-bottom:20px;
+		margin-left:15px ;
+		margin-right:15px;
+		margin-bottom:20px;
+		width:45%;
+		height:280px;
+		overflow-y:auto;
+		overflow-x:hidden;
+		box-shadow: 0px 4px 8px 0 rgba(7,17,27,.1),4px 0px 8px 0 rgba(7,17,27,.1),-4px 0px 8px 0 rgba(7,17,27,.1);
+	}
+	.comment-area:hover {
+
+		box-shadow: 0px 4px 24px 0 rgba(7,17,27,.1),4px 0px 24px 0 rgba(7,17,27,.1),-4px 0px 24px 0 rgba(7,17,27,.1);
+		transition: .3s all linear;
+	}
+
+	.comment-area::-webkit-scrollbar
+	{
+		width: 0px;
+		background-color: transparent;
+	}
+	.comment-user-info {
+		padding:12px 7px 10px 10px;
+	}
+	.comment-content {
+		padding:7px 10px 10px 7px;
+		font-family:-apple-system,"Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size:15px;
+	}
+	.comment-user-name {
+		padding: 0 0 5px 0px;
+		vertical-align:top;
+	}
+	.comment-time {
+		width:60px;
+		text-align:center;
+		font-size:10px;
+	}
+	.comment-teacher-name {
+		text-align:center;
+		margin-top:15px;
+	}
+	.comment-user {
+		display:inline-block;
+		vertical-align:top;
+	}
+	.comment-user-avatar {
+		margin-right:10px;
+		border-radius:50%;
+	}
+}
+	/*Comment Area*/
+	@media screen and (min-width:992px) {
+	.comment-area {
+		display:inline-block;
+		vertical-align:top;
+		background-color:#c7d6d8;
+		padding:10px 15px 10px 15px;
+		margin-bottom:20px;
+		margin-left:15px ;
+		margin-right:15px;
+		margin-bottom:20px;
+		width:30%;
+		height:280px;
+		overflow-y:auto;
+		overflow-x:hidden;
+		box-shadow: 0px 4px 8px 0 rgba(7,17,27,.1),4px 0px 8px 0 rgba(7,17,27,.1),-4px 0px 8px 0 rgba(7,17,27,.1);
+	}
+	.comment-area:hover {
+
+		box-shadow: 0px 4px 24px 0 rgba(7,17,27,.1),4px 0px 24px 0 rgba(7,17,27,.1),-4px 0px 24px 0 rgba(7,17,27,.1);
+		transition: .3s all linear;
+	}
+
+	.comment-area::-webkit-scrollbar
+	{
+		width: 0px;
+		background-color: transparent;
+	}
+	.comment-user-info {
+		padding:12px 7px 10px 10px;
+	}
+	.comment-content {
+		padding:7px 10px 10px 7px;
+		font-family:-apple-system,"Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size:15px;
+	}
+	.comment-user-name {
+		padding: 0 0 5px 0px;
+		vertical-align:top;
+	}
+	.comment-time {
+		width:60px;
+		text-align:center;
+		font-size:10px;
+	}
+	.comment-teacher-name {
+		text-align:center;
+		margin-top:15px;
+	}
+	.comment-user {
+		display:inline-block;
+		vertical-align:top;
+	}
+	.comment-user-avatar {
+		margin-right:10px;
+		border-radius:50%;
+	}
+}

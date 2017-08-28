@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8" />
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>青蓝-选课页面</title>
+		<link rel="stylesheet" type="text/css" href="/static/teacher/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/static/teacher/css/global.css">
+		<link rel="stylesheet" href="/static/teacher/css/font-awesome.css">
+		<link rel="stylesheet" href="/static/teacher/css/templatemo-style.css">
+		<script src="/static/teacher/js/vendor/jquery.min.js"></script>
+		<script src="/static/teacher/js/bootstrap.js"></script>
+		<script src="/static/teacher/js/city-picker.data.js"></script>
+		<script src="/static/teacher/js/city-picker.js"></script>
+		<script src="/static/teacher/js/main.js"></script>
+		<script src="/static/teacher/js/freetime.js"></script>
+	</head>
+
+	<body>
+		
+			<!--导航部分-->
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-version">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="{:url('home/home/home')}">青蓝艺术教育</a>
+				</div>
+				<div class="collapse navbar-collapse" id="mobile-version">
+					<ul class="nav navbar-nav">
+						<li id="currCity"><a><span class="fa fa-map-marker"></span>&nbsp;天津&nbsp;<small>北辰区</small></a></li>
+
+						<li><a data-toggle="modal" data-target="#switchCity" href="#">切换城市</a></li>
+
+						<!-- Modal -->
+						<div class="modal fade" id="switchCity" tabindex="-1" role="dialog" aria-labelledby="switchCity">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title">选择城市</h4>
+									</div>
+									<form action="{:url('teacherlist/teacherlist/teacherlist',"page=1")}" method="post" class="form-inline">
+									<div class="modal-body">
+										<div class="docs-methods">
+											
+												<div id="distpicker">
+													<div class="form-group">
+														<div>
+															<input name="city" class="form-control" id="city-picker3" readonly type="text" data-toggle="city-picker">
+														</div>
+													</div>
+													<div class="form-group">
+														<button class="btn btn-warning" id="reset" type="button">重置</button>
+														<button class="btn btn-danger" id="destroy" type="button">确定</button>
+													</div>
+												</div>
+										</div>
+									
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										<button type="submit" class="btn btn-primary">Save changes</button>
+									</div>
+								</form>
+								</div>
+							</div>
+						</div>
+					</ul>
+					<form action="{:url('teacherlist/teacherlist/search')}" method="post" class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input class="form-control" type="text" placeholder="想学什么" name="search">
+						</div>
+						<button class="btn btn-info" type="submit">搜索</button>
+
+						<span data-toggle="modal" data-target="#myModal" class="time-filter fa fa-calendar"></span>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+										<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+									</div>
+									<div class="modal-body">
+										<p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+										<!--课程表-->
+										<table class="free-time-search table table-fixed table-bordered">
+											<thead>
+												<th>周一</th>
+												<th>周二</th>
+												<th>周三</th>
+												<th>周四</th>
+												<th>周五</th>
+												<th>周六</th>
+												<th>周日</th>
+											</thead>
+											<tbody>
+												<tr class="success">
+													<td>上午<span></span></td>
+													<td>上午<span></span></td>
+													<td>上午<span></span></td>
+													<td>上午<span></span></td>
+													<td>上午<span></span></td>
+													<td>上午<span></span></td>
+													<td>上午<span></span></td>
+												</tr>
+												<tr class="warning">
+													<td>下午<span></span></td>
+													<td>下午<span></span></td>
+													<td>下午<span></span></td>
+													<td>下午<span></span></td>
+													<td>下午<span></span></td>
+													<td>下午<span></span></td>
+													<td>下午<span></span></td>
+												</tr>
+												<tr class="info">
+													<td>晚上<span></span></td>
+													<td>晚上<span></span></td>
+													<td>晚上<span></span></td>
+													<td>晚上<span></span></td>
+													<td>晚上<span></span></td>
+													<td>晚上<span></span></td>
+													<td>晚上<span></span></td>
+												</tr>
+											</tbody>
+										</table>
+										<!--课程表-->
+
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Save changes</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="{:url('login/login/login')}"><?php echo getUsername();?></a></li>
+						<li><a href="{:url('register/register/register')}"><?php echo getQuit();?></a></li>
+						<li><a href="#">帮助</a></li>
+					</ul>
+
+				</div>
+			</nav>
+			<!--导航部分-->
+		<div class="container">
+			<!--面包屑导航-->
+			<div class="nav-header">
+			<ol class="breadcrumb">
+				<li><a href="{:url('teacherlist/teacherlist/teacherlist','page=1')}">首页</a></li>
+				<li><a href="#">天津北辰区</a></li>
+				<!--<li><a href="#">国际象棋</a></li>-->
+			</ol>
+			<!--面包屑导航-->
+
+			<!--老师信息导航-->
+			<nav class="teacher-info-nav">
+				<ul class="nav nav-pills">
+					<li><a href=<?php
+						$tid=$teacher['tid'];
+						$href=url("teacher/teacher/teacher_home","tid=$tid");
+						echo $href;
+					?>
+					>主页</a></li>
+					<li><a href=<?php
+						$tid=$teacher['tid'];
+						$href=url("teacher/teacher/teacher_course","tid=$tid");
+						echo $href;
+					?> 
+					>课程</a></li>
+					<li><a href=<?php
+						$tid=$teacher['tid'];
+						$href=url("teacher/teacher/teacher_video","tid=$tid");
+						echo $href;
+					?>
+					>视频/相册</a></li>
+					<!--		<li><a href="#article" >文章</a></li>
+		 <li><a href="#info" >个人资料</a></li>
+					-->
+					<li class="active"><a href="#" >评价</a></li>
+				</ul>
+			</nav>
+			</div>
+			<!--老师信息导航-->
+
+
+			<!--老师信息-->
+
+			<div class="comment-teacher-name">
+				<h1 style="display:inline-block" class="text-primary">
+				<?php echo $teacher['tname'];?>&nbsp;</h1>
+				<span class="teacher-rank label label-primary">
+					<?php echo $teacher['confirm'];?>
+				</span>
+			</div>
+					<div class="row">
+						<div class="comment-area col-lg-4">
+							<div class="comment-user-info">
+								<img class="comment-user-avatar" src="/static/teacher/img/coffeetv.gif" alt="user-avatar" width="60px">
+								<div class="comment-user">
+									<h2 class="comment-user-name">马克 怀特</h2>
+									<h4><small>所学课程:php<small></h4>
+								</div>
+							</div>
+
+
+							<div class="comment-content">
+								<div class="comment-info">
+									学习了一段时间之后对php有了初步的了解
+									熟悉了php和html处理网页的基础知识
+									老师讲的很生动 也会举很多例子供我们参考
+									希望能在以后的日子继续和老师学习更多php的知识
+								</div>
+							</div>
+						</div>
+					</div>
+					
+		<footer class="site-footer">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="social-icons">
+						<ul>
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-behance"></a></li>
+							<li><a href="#" class="fa fa-dribbble"></a></li>
+							<li><a href="#" class="fa fa-google-plus"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="copyright-text">Copyright &copy; 2017 青蓝艺术教育
+				</div>
+			</div>
+		</footer>
+
+
+		</div><!--container-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/min/plugins.min.js"></script>
+		<script src="js/min/main.min.js"></script>
+	</body>
+</html>

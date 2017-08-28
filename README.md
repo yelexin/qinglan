@@ -1,2 +1,0 @@
-# qinglan
-Front-end codes.

@@ -1,0 +1,13 @@
+window.onload=init;
+function $(id){
+	return document.getElementById(id);
+}
+
+function init(){
+	price=$('price').dataset.price;
+	$('course-hours').onchange=sum;
+}
+
+function sum(){
+	$('cost').innerHTML=$('course-hours').value*price+'￥';
+}
